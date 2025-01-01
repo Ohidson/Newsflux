@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsflux</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+</head>
+<body class="md:overflow-x-hidden">
+  <nav class="xl:top-0 xl:fixed flex items-center justify-between xl:px-[8%] lg:px-[5%] sm:px-[3%] py-4 shadow-white-500 z-20">
+    <div class="w-28 font-bold cursor-pointer">
+      <span class="text-gray-500 w-32 font-bold">News</span><span class="text-orange-500 font-bold w-32">Flux</span>
+    </div>
+    <ul class="hidden md:flex lg:gap-8 md:gap-4 bg-white background-opacity-50 shadow-sm items-center justify-between px-6 py-4 font-bold">
+      <li class="cursor-pointer"><a href="#">Latest</a></li>
+      <li class="cursor-pointer"><a href="#">Home</a></li>
+      <li class="cursor-pointer"><a href="#">Fashion</a></li>
+      <li><a href="#" class="cursor-pointer">Sport</a></li>
+    </ul>
+    <div class="flex ">
+      <div class="rounded-full border border-gray-400 px-3 py-2 flex items-center justify-center">
+        <a href="" class="font-semibold">Contact Us</a><img src="images/right-arrow.png" class="w-4 ml-3">
+      </div>
+      <img src="images/dark-menu.jpeg" class="w-8 ml-2 cursor-pointer sm:hidden block">
+    </div>
+  </nav>
+  <!-- Heading -->
+  <div class="grid grid-row overflow-x-hidden md:flex sm:grid grid-cols-[1fr_52%_1fr] sm:grid-cols-1 sm: xl:py-10 sm:py-4 md:py-4 xl:px-[8%] lg:px-[5%] sm:px-[3%] sm:gap-4"  id="main-content">
+    <!--first item-->
+    <div class="row-start-2 row-end-3 flex-1/3 sm:flex1 sm:order-1 order-2">
+      <h1 class="font-bold text-center text-2xl">TRENDING</h1>
+      <div class="flex md:flex-col">
+        <img src="images/Ohidson1.jpg" alt="" class="rounded-full mt-4 md:h-48 md:w-48 h-32 w-32 mx-auto">
+        <p class="font-lobster font- py-4 cursor-pointer text-center text-xl w-64 shadow-white-500 
+        italic hover:decoration-underline">This is Raji Ohidson, the creator of Newsflux. A medium, first with the breaking news</p>
+          <hr class="border border-gray-200 my-8">
+      </div>
+      <div class="flex md:flex-col">
+        <img src="images/elon.jpeg" alt="" class="rounded-full mt-4 md:h-48 md:w-48 h-32 w-32 mx-auto">
+        <p class="font-lobster font- py-4 cursor-pointer text-center text-xl w-64 shadow-white-500 
+        italic hover:decoration-underline">Elon Musk networth hits $426bn, tops Forbes billionaire list</p>
+        <hr class="border border-gray-200 my-8">
+      </div>
+      <div class="flex md:flex-col">
+        <img src="images/elon.jpeg" class="rounded-full mt-4 md:h-48 md:w-48 h-32 w-32 mx-auto">
+        <p class="font-lobster font- py-4 cursor-pointer text-center text-xl w-64 shadow-white-500 
+        italic hover:decoration-underline">Elon Musk networth hits $426bn, tops Forbes billionaire list</p>
+      </div>
+    </div>
+    <!--second item-->
+    <div class="row-start-1 row-end-2 top-0 md:flex-[42%] flex-1/3 mb-4 self-center sm:order-2 order-1 bg-gray-300 md:my-0 my-2">
+      <img src="images/tinubu.jpg" alt="" class="md:mx-auto md:h-[60vh] max-w w-full">
+      <h1 class="font-bold py-4 px-3 text-3xl cursor-pointer">No regrete removing subsidy, tax reform'll go 
+        ahead -Tinubu</h1>
+      <!-- second-->      
+      <img src="images/gaza-suffer.webp" alt="" class="md:mx-auto md:h-[60vh] my-4 max-w w-full">
+      <h1 class="font-bold py-4 px-3 text-3xl cursor-pointer">Famine, diseases spread across Gaza strip</h1>  
+    </div>
+    <!--third item-->
+    <div class="row-start-3 flex-1/3 order-3 text-center">
+      <h1 class="font-bold text-center text-2xl mb-4">LATEST</h1>
+      <hr class="border border-gray-200 my-8">
+      <p class="font-lobster font- pt-0 cursor-pointer sm:text-justify text-xl w-64 shadow-white-500 
+        italic hover:decoration-underline mx-auto">N935/liter petrol: Labour faults new price, demand further reduction</p>
+        <hr class="border border-gray-200 my-8">
+      <p class="font-lobster font- pt-0 cursor-pointer sm:text-justify text-xl w-64 shadow-white-500 
+        italic hover:decoration-underline mx-auto">Merry Christmas: Newsflux wishing you and your family merry chrismas</p>
+        <hr class="border border-gray-200 my-8">
+      <p class="font-lobster font- pt-0 cursor-pointer sm:text-justify text-xl w-64 shadow-white-500 
+        italic hover:decoration-underline mx-auto">FG Workers' gloomy Christmas: Federal government workers are facing a bleak chrismas with delay salary</p>
+        <hr class="border border-gray-200 my-8">
+      <p class="font-lobster font- pt-0 cursor-pointer sm:text-justify text-xl w-64 shadow-white-500 text-center 
+        italic hover:decoration-underline mx-auto mb-7">N935/liter petrol: Labour faults new price, demand further reduction</p>
+    </div>
+  </div>
+  <!--section-->
+  <div class="bg-orange-400 text-white py-8 flex sm:flex-row flex-col sm:gap-6 gap-4 lg:px-[8%] justify-between items-center">
+    <div class="flex-1/3">
+      <h1 class="text-center pb-6 text-xl font-semibold">RELATIONSHIP</h1>
+      <img src="images/Jack.jpeg" class="sm:mx-auto w-11/12 mx-auto cursor-pointer">
+      <h1 class="mx-auto itaalic bg-white w-11/12 text-center italic py-4 px-2 whitespace-normal text-2xl text-black">Former Twitter CEO, Jack Dorsey sported with his girlfriend Kate Greer</h1>
+      <p class="text-center py-2"><a href="#" class="flex items-center justify-center">MORE EVENTS <img src="images/whit-arrow.png" class="w-6 ml-2"></a></p>
+    </div>
+    <div class="flex-1/3">
+      <h1 class="text-center pb-6 text-xl font-semibold">ENTERTAINMENT</h1>
+      <img src="images/uche_jumbo.jpeg" class="w-11/12 mx-auto h-auto cursor-pointer">
+      <h1 class=" bg-white text-center
+      mx-auto italic py-4 px-2 w-11/12 whitespace-normal text-2xl text-black">Uche Jumbo marks 45th birthday in style, says: life begins at 45</h1>
+      <p class="text-center py-2"><a href="#" class="flex items-center justify-center">MORE EVENTS <img src="images/whit-arrow.png" class="w-6 ml-2"></a></p>
+    </div>
+    <div class="flex-1/3">
+      <h1 class="text-center pb-6 text-xl font-semibold">RELATIONSHIP</h1>
+      <img src="images/Ohidson1.jpg" class="w-11/12 mx-auto cursor-pointer">
+      <h1 class="bg-white text-center w-11/12 mx-auto italic py-4 px-2 whitespace-normal text-2xl text-black">Ohidson takes us through on key issues in ease of doing business</h1>
+      <p class="text-center py-2"><a href="#" class="flex items-center justify-center">MORE EVENTS <img src="images/whit-arrow.png" class="w-6 ml-2"></a></p>
+    </div>
+  </div>
+  <!--New post-->
+  <div class="my-20 flex flex-col md:flex-row lg:px-[5%] gap-4 items-center justify-center">
+    <div class="">
+      <div class="flex flex-row flex-2/3 gap-4 mb-6">
+        <div class="flex-[36%] sm:flex-[35%]">
+          <img src="images/jimmy-cater.webp" class="w-full">
+        </div>
+        <div class="flex-[62%] sd:flex-[72%]">
+          <small class="font-semibold text-gray-500">NEWS</small>
+          <p class="font-semibold font-sans text-2xl">Jimmy Carter: Nobel-winning humanatarian and ex-US President dies at 100</p>
+            <p class="text-gray-500 hidden sm:block">Jimmy Carter, the 39th President of the United State, has passed away at the age of 100. The Carter center which Jimmy Carter founded when living&hellip;</p>
+        </div>
+        <hr class="border border-gray-700">
+      </div>
+      <!--second-->
+      <div class="flex flex-row flex-2/3 gap-4 mb-6">
+        <div class="flex-[36%] sm:flex-[35%]">
+          <img src="images/jackie-aina.jpg" class="w-full">
+        </div>
+        <div class="flex-[62%] sd:flex-[72%]">
+          <small class="font-semibold text-gray-500">BEAUTY</small>
+          <p class="font-semibold font-sans text-2xl">Jackie Aina Reps Black 
+            Excellence at this year's White House Christmas Party</p>
+            <p class="text-gray-500 hidden sm:block">Jackie Asamoah (nee Aina), the Nigerian-American beauty 
+              mogul and social media sensation, recently graced the prestigeous 
+              White House Christmas Party, captivating viewers with her undeniable 
+              style...</p>
+        </div>
+        <hr class="border border-gray-700">
+      </div>
+      <!--third-->
+      <div class="flex flex-row flex-2/3 gap-4 mb-6">
+        <div class="flex-[36%] sm:flex-[35%]">
+          <img src="images/uche-jumbo.jpeg" class="w-full">
+        </div>
+        <div class="flex-[62%] sd:flex-[72%]">
+          <small class="font-semibold text-gray-500">NOLLYWOOD</small>
+          <p class="font-semibold font-sans text-2xl">Uche Jombo marks 45th birthday in style</p>
+            <p class="text-gray-500 hidden sm:block">In a series of posts, 
+              Uche described her 45th birthday as more than just a 
+              celebration of age, but a tribute to life itself, emphasizing the challenges she faced over the past year.</p>
+        </div>
+        <hr class="border border-gray-700">
+      </div>
+      <!--fourth-->
+      <div class="flex flex-row flex-2/3 gap-4 mb-6">
+        <div class="flex-[36%] sm:flex-[35%]">
+          <img src="images/kekius.jpeg" class="w-full">
+        </div>
+        <div class="flex-[62%] sd:flex-[72%]">
+          <small class="font-semibold text-gray-500">TECH</small>
+          <p class="font-semibold font-sans text-2xl">Elon Musk changes name on his X twitter platform to "Kekius Maximus"</p>
+            <p class="text-gray-500 hidden sm:block">Tech billionaire Elon Musk, who is known for his quirky and out-of-the-box
+              antics on social media, has now updated his X (formerly Twitter) account by changing his name...</p>
+        </div>
+        <hr class="border border-gray-700">
+      </div>
+      <!--fifth-->
+      <div class="flex flex-row flex-2/3 gap-4 mb-6">
+        <div class="flex-[36%] sm:flex-[35%]">
+          <img src="images/burna-boy.webp" class="w-full">
+        </div>
+        <div class="flex-[62%] sd:flex-[72%]">
+          <small class="font-semibold text-gray-500">MUSIC</small>
+          <p class="font-semibold font-sans text-2xl">Why I don’t honour podcast interviews – Burna Boy</p>
+            <p class="text-gray-500 hidden sm:block">On his Instagram story, Burna Boy expressed his 
+              dissatisfaction with podcast-style interviews, emphasising that, as a professional in his field, 
+              he expects to be interviewed by professionals...</p>
+        </div>
+        <hr class="border border-gray-700">
+      </div>
+      <!--sixth-->
+      <div class="flex flex-row flex-2/3 gap-4 mb-6">
+        <div class="flex-[36%] sm:flex-[35%]">
+          <img src="images/rooney.jpeg" class="w-full">
+        </div>
+        <div class="flex-[62%] sd:flex-[72%]">
+          <small class="font-semibold text-gray-500">FOOTBALL</small>
+          <p class="font-semibold font-sans text-2xl">United legend, Wayne Rooney sacked as Plymouth Argyle manager</p>
+            <p class="text-gray-500 hidden sm:block">Wayne Rooney axed by Plymouth after woeful run of form with Man 
+              Utd legend’s men bottom of championship...</p>
+        </div>
+        <hr class="border border-gray-700">
+      </div>
+    </div>
+    
+    <div class="flex-1/3">
+      <img src="images/ad-img.jpg" class="w-full pb-4">
+      <img src="images/ad2.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
