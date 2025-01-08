@@ -1,0 +1,16 @@
+#navbar{
+  position: relative;
+}
+
+#navmenu{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media(max-width: 300px){
+  #main-content{
+    width: 100%;
+    background: #000
+  }
+}

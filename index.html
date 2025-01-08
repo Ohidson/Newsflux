@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Newsflux</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="tailwind.config.js"></script>
 </head>
-<body class="md:overflow-x-hidden">
-  <nav class="xl:top-0 xl:fixed flex items-center justify-between xl:px-[8%] lg:px-[5%] sm:px-[3%] py-4 shadow-white-500 z-20">
+<body class="sm:overflow-x-hidden sm:space-x-0">
+  <nav class="xl:top-0 xl:fixed flex items-center justify-between xl:px-[8%] lg:px-[5%] sm:px-[3%] py-4 shadow-white-500 z-20 relative" id="navbar">
     <div class="w-28 font-bold cursor-pointer">
       <span class="text-gray-500 w-32 font-bold">News</span><span class="text-orange-500 font-bold w-32">Flux</span>
     </div>
@@ -24,11 +25,20 @@
       </div>
       <img src="images/dark-menu.jpeg" class="w-8 ml-2 cursor-pointer sm:hidden block">
     </div>
+    <!--mobile version-->
+    <ul class="flex gap-4 flex-col font-bold sm:hidden 
+    bg-orange-300 fixed top-0 -right-64 h-[100vh] w-64" id="navmenu">
+    <img src="images/close.png" class="w-6 absolute top-4 right-4">
+        <li class="cursor-pointer relative top-6 left-6"><a href="#">Latest</a></li>
+        <li class="cursor-pointer relative top-6 left-6"><a href="#">Home</a></li>
+        <li class="cursor-pointer relative top-6 left-6"><a href="#">Fashion</a></li>
+        <li><a href="#" class="cursor-pointer relative top-6 left-6">Sport</a></li>
+    </ul>
   </nav>
   <!-- Heading -->
-  <div class="grid grid-row overflow-x-hidden md:flex sm:grid grid-cols-[1fr_52%_1fr] sm:grid-cols-1 sm: xl:py-10 sm:py-4 md:py-4 xl:px-[8%] lg:px-[5%] sm:px-[3%] sm:gap-4"  id="main-content">
+  <div class="grid grid-row md:flex sm:grid grid-cols-[1fr_52%_1fr] xl:py-10 sm:py-4 md:py-4 xl:px-[8%] lg:px-[5%] sm:px-[3%] sm:gap-4" id="main-content">
     <!--first item-->
-    <div class="row-start-2 row-end-3 flex-1/3 sm:flex1 sm:order-1 order-2">
+    <div class="row-start-2 row-end-3 flex-1/3 space-x-0">
       <h1 class="font-bold text-center text-2xl">TRENDING</h1>
       <div class="flex md:flex-col">
         <img src="images/Ohidson1.jpg" alt="" class="rounded-full mt-4 md:h-48 md:w-48 h-32 w-32 mx-auto">
@@ -75,7 +85,7 @@
     </div>
   </div>
   <!--section-->
-  <div class="bg-orange-400 text-white py-8 flex sm:flex-row flex-col sm:gap-6 gap-4 lg:px-[8%] justify-between items-center">
+  <div class="bg-orange-400 text-white py-8 flex sm:flex-row flex-col sm:gap-6 gap-4 lg:px-[6%] justify-between items-center">
     <div class="flex-1/3">
       <h1 class="text-center pb-6 text-xl font-semibold">RELATIONSHIP</h1>
       <img src="images/Jack.jpeg" class="sm:mx-auto w-11/12 mx-auto cursor-pointer">
@@ -96,95 +106,55 @@
       <p class="text-center py-2"><a href="#" class="flex items-center justify-center">MORE EVENTS <img src="images/whit-arrow.png" class="w-6 ml-2"></a></p>
     </div>
   </div>
-  <!--New post-->
-  <div class="my-20 flex flex-col md:flex-row lg:px-[5%] gap-4 items-center justify-center">
-    <div class="">
-      <div class="flex flex-row flex-2/3 gap-4 mb-6">
-        <div class="flex-[36%] sm:flex-[35%]">
-          <img src="images/jimmy-cater.webp" class="w-full">
+  <!--New Post-->
+  <div class="flex sm:flex-row flex-col gap-4 py-8 xl:px-[6%] lg:px-[4%] md:px-5 sm:px-3">
+    <div class="flex-2/3 gap-4">
+      <div class="flex gap-4 py-4">
+        <div class="flex-[46%]">
+          <img src="images/jimmy-cater.webp" class="cursor-pointer">
         </div>
-        <div class="flex-[62%] sd:flex-[72%]">
-          <small class="font-semibold text-gray-500">NEWS</small>
-          <p class="font-semibold font-sans text-2xl">Jimmy Carter: Nobel-winning humanatarian and ex-US President dies at 100</p>
-            <p class="text-gray-500 hidden sm:block">Jimmy Carter, the 39th President of the United State, has passed away at the age of 100. The Carter center which Jimmy Carter founded when living&hellip;</p>
+        <div class="flex-[52%]">
+          <span class="text-gray-500 font-bold my-4">NEWS</span>
+          <P class="text-xl font-semibold">Tributes Pour in for Former US 
+            President Jimmy Carter, Who Passes at 100</P>
+          <p class="py-4 text-gray-500">Jimmy Carter, the 39th president of the United States, has passed away at the age of 100. 
+            The Carter Center, which Jimmy Carter founded after leaving office, confirmed the news in 
+            a statement shared on social media...</p>
         </div>
-        <hr class="border border-gray-700">
       </div>
       <!--second-->
-      <div class="flex flex-row flex-2/3 gap-4 mb-6">
-        <div class="flex-[36%] sm:flex-[35%]">
-          <img src="images/jackie-aina.jpg" class="w-full">
+      <div class="flex gap-4">
+        <div class="flex-[46%]">
+          <a href="asset/sweet.html">
+            <img src="images/friend.jpg">
+          </a>        
         </div>
-        <div class="flex-[62%] sd:flex-[72%]">
-          <small class="font-semibold text-gray-500">BEAUTY</small>
-          <p class="font-semibold font-sans text-2xl">Jackie Aina Reps Black 
-            Excellence at this year's White House Christmas Party</p>
-            <p class="text-gray-500 hidden sm:block">Jackie Asamoah (nee Aina), the Nigerian-American beauty 
-              mogul and social media sensation, recently graced the prestigeous 
-              White House Christmas Party, captivating viewers with her undeniable 
-              style...</p>
+    
+        <div class="flex-[52%]">
+          <a href="asset/sweet.html"><span class="text-gray-500 font-bold my-4">NEWS</span></a>
+          <a href="asset/sweet.html"><P class="text-xl font-semibold cursor-pointer">Shirley and Odafe Story From Family Friends to Lovers! 
+            Here’s How Shirley & Odafe’s Journey Began</P></a>
+          <a href="asset/sweet.html"><p class="py-4 text-gray-500">Shirley and Odafe were just 
+            family friends until their relationship took a sweeter turn when they reconnected at a party five years ago....</p>
+          </a>
         </div>
-        <hr class="border border-gray-700">
-      </div>
-      <!--third-->
-      <div class="flex flex-row flex-2/3 gap-4 mb-6">
-        <div class="flex-[36%] sm:flex-[35%]">
-          <img src="images/uche-jumbo.jpeg" class="w-full">
-        </div>
-        <div class="flex-[62%] sd:flex-[72%]">
-          <small class="font-semibold text-gray-500">NOLLYWOOD</small>
-          <p class="font-semibold font-sans text-2xl">Uche Jombo marks 45th birthday in style</p>
-            <p class="text-gray-500 hidden sm:block">In a series of posts, 
-              Uche described her 45th birthday as more than just a 
-              celebration of age, but a tribute to life itself, emphasizing the challenges she faced over the past year.</p>
-        </div>
-        <hr class="border border-gray-700">
-      </div>
-      <!--fourth-->
-      <div class="flex flex-row flex-2/3 gap-4 mb-6">
-        <div class="flex-[36%] sm:flex-[35%]">
-          <img src="images/kekius.jpeg" class="w-full">
-        </div>
-        <div class="flex-[62%] sd:flex-[72%]">
-          <small class="font-semibold text-gray-500">TECH</small>
-          <p class="font-semibold font-sans text-2xl">Elon Musk changes name on his X twitter platform to "Kekius Maximus"</p>
-            <p class="text-gray-500 hidden sm:block">Tech billionaire Elon Musk, who is known for his quirky and out-of-the-box
-              antics on social media, has now updated his X (formerly Twitter) account by changing his name...</p>
-        </div>
-        <hr class="border border-gray-700">
-      </div>
-      <!--fifth-->
-      <div class="flex flex-row flex-2/3 gap-4 mb-6">
-        <div class="flex-[36%] sm:flex-[35%]">
-          <img src="images/burna-boy.webp" class="w-full">
-        </div>
-        <div class="flex-[62%] sd:flex-[72%]">
-          <small class="font-semibold text-gray-500">MUSIC</small>
-          <p class="font-semibold font-sans text-2xl">Why I don’t honour podcast interviews – Burna Boy</p>
-            <p class="text-gray-500 hidden sm:block">On his Instagram story, Burna Boy expressed his 
-              dissatisfaction with podcast-style interviews, emphasising that, as a professional in his field, 
-              he expects to be interviewed by professionals...</p>
-        </div>
-        <hr class="border border-gray-700">
-      </div>
-      <!--sixth-->
-      <div class="flex flex-row flex-2/3 gap-4 mb-6">
-        <div class="flex-[36%] sm:flex-[35%]">
-          <img src="images/rooney.jpeg" class="w-full">
-        </div>
-        <div class="flex-[62%] sd:flex-[72%]">
-          <small class="font-semibold text-gray-500">FOOTBALL</small>
-          <p class="font-semibold font-sans text-2xl">United legend, Wayne Rooney sacked as Plymouth Argyle manager</p>
-            <p class="text-gray-500 hidden sm:block">Wayne Rooney axed by Plymouth after woeful run of form with Man 
-              Utd legend’s men bottom of championship...</p>
-        </div>
-        <hr class="border border-gray-700">
-      </div>
+      </div>  
+        
+      
     </div>
     
+      
+
     <div class="flex-1/3">
-      <img src="images/ad-img.jpg" class="w-full pb-4">
-      <img src="images/ad2.png" alt="">
+      <div>
+        <p class="text-sm">Oluwabukola Ajayi on #BNShareYourHustle: Nominate Your Fave SME for a FREE Post on BellaNaija</p>
+        <hr class="my-3 text-gray-400">
+      </div>
+      <!--second-->
+      <div class="text-sm">
+        <p>Me on #BNShareYourHustle: Nominate Your Fave SME for a FREE Post on BellaNaija</p>
+        <hr class="my-3 text-gray-400">
+      </div>
     </div>
   </div>
 </body>
